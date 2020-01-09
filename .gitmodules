@@ -5,7 +5,7 @@
 	path = Scripts/git-moss/DrivenByMOss
 	url = git@github.com:git-moss/DrivenByMoss.git
 [submodule "Scripts/Scripts/Klinkenstecker/csurf_klinke_mcu"]
-	path = Scripts/Scripts/Klinkenstecker/csurf_klinke_mcu
+	path = Scripts/Klinkenstecker/csurf_klinke_mcu
 	url = https://bitbucket.org/Klinkenstecker/csurf_klinke_mcu.git
 [submodule "Scripts/jahudka/reaper_consolefx"]
 	path = Scripts/jahudka/reaper_consolefx
