@@ -1,0 +1,90 @@
+v6.0 - December 3 2019
+  + Defaults: enable Live FX multiprocessing by default
+  + Defaults: enable track record monitoring on new tracks by default
+  + Defaults: set volume envelopes to fader scaling by default
+  + Dynamic split: add preset support
+  + Dynamic split: overhaul and improvements to algorithm and gate handling
+  + Dynamic split: retain settings after canceling the window
+  + FX: allow embedding some plug-in UIs into track and mixer control panels
+  + FX: support embedding UIs for ReaEQ, ReaXComp, ReaComp, ReaSurround, and graphical JSFX
+  + FX: add preference to display FX list on right side of FX chain window
+  + FX: add preference to display add/delete buttons above list in FX chain window
+  + Import: handle WAV and AIFF (Apple Loops) files containing transient information similarly to REX files
+  + MIDI editor: display and edit CC/velocity as dots and lines, CCs as linear and curved envelopes, similar to track envelopes
+  + MIDI editor: add note-type buttons to default toolbar
+  + MIDI editor: add option to display note length in velocity lane
+  + MIDI editor: add option to move bank/program change events with notes
+  + MIDI editor: add preference to automatically reduce CC events when drawing
+  + MIDI editor: combine note properties and event properties into one modeless dialog
+  + MIDI editor: add mouse modifiers to reset CC/velocity to default values
+  + MIDI editor: make default CC event and CC lane mouse modifiers more like default envelope behaviors
+  + MIDI editor: repopulate raw MIDI data display window when switching active media item
+  + Main window: support positioning track control panels on right side of arrange
+  + Media import: properly adjust length of imported media with embedded tempo when crossing project tempo changes
+  + Media import: support adjusting media based on tempo suggested by filename
+  + Media items: add new "Beats (auto-stretch at tempo changes)" timebase
+  + Media items: add action to add stretch markers at project tempo changes
+  + Media items: add action to recalculate automatic stretch markers at project tempo changes
+  + Media items: add action to convert embedded source media transient information to transient guides
+  + Media items: optionally create transient guides on import for media with embedded transient information
+  + Media items: support calculating playback rate from user-supplied tempo or length in beats
+  + Media items: when copy/pasting items with stretch markers, preserve the original play rate
+  + Menus: very lightly refresh main file/edit/view/insert menus
+  + Modal windows: remember window positions (configurable option in preferences/general/advanced to tweak behavior)
+  + Mouse modifiers: add double-click behaviors to reset CC value, curvature, edit properties
+  + Mouse modifiers: add preference to draw/edit CC events immediately on mouse click
+  + Multiprocessing: auto-detect up to 128 threads
+  + Multiprocessing: increase anticipative FX hard limit to 128 threads, live FX hard limit to 64 threads
+  + Multiprocessing: remove old 4.x scheduler mode, non-event synchronization modes
+  + Notation editor: support customized staff and note context menus
+  + Performance: improve performance and reduce system resource consumption with large track counts
+  + Performance: add option in disk settings to periodically close excess open files
+  + Performance: add option to read peaks files under a certain size completely to RAM (to reduce open file count)
+  + REX: add option to ignore all embedded slice and tempo information
+  + ReaFIR: add context menu mode configuration
+  + ReaScript: add MIDI_GetCCShape, MIDI_SetCCShape
+  + ReaScript: add support for CC shapes to MIDI_Get(Set)AllEvts
+  + ReaScript: add support for setting track playback offset value and attributes
+  + ReaScript: add support for user-defined note and track notation data that is not displayed
+  + ReaScript: fix setting MIDI meta-messages via API
+  + ReaScript: add reduce_open_files() utility function for users running up against open file handle limitations
+  + Render: include all options in "options and format" render presets
+  + Render: optionally embed transient information into WAV or AIFF files
+  + Render: support embedding tempo into AIFF files
+  + Render: support rendering only selected regions in an existing region render matrix [t=193405]
+  + Render: when enabled, embed exact tempo of rendered item/time
+  + Resampling: added SSE2-optimized sinc calculation (from Theo Niessink)
+  + Resampling: optimize and greatly improve quality of resampling for conversion between common rates
+  + Routing: add track wiring view
+  + Theming: new Default 6.0 theme with theme adjuster script allowing for extensive customization of the new default theme
+  + Theming: layout DPI translation for HiDPI/Retina displays
+  + Theming: apply main window size area theme element only on mouseover
+  + Theming: improve theme rendering appearance when using custom UI scaling
+  + Theming: apply advanced preference UI scaling changes immediately
+  + Theming: replace tcp.dragdropchild with tcp.dragdropinfo [indent_sibling_track indent_child_track]
+  + Theming: add additional 8 WALTER font slots
+  + Theming: add support for midi_score_colormap, in addition to midi_note_colormap
+  + Toolbars: actions to switch last focused toolbar will default to switching main toolbar
+  + Toolbars: improve HiDPI/Retina support (toolbar_icons/ can have 150/ and 200/ subdirs)
+  + Tracks: support positive or negative playback time offset without affecting PDC
+  + Tracks: add action to bypass track playback offset
+  + Tracks: add user preference for max MIDI playback speed to catch up to negative track playback offset
+  + VST3: support plugins that export MIDI note names
+  + Windows: HiDPI awareness and display improvements (auto-rescale more UI when running HiDPI aware)
+  + Windows: improve appearance of docker, ReaPlugs, and other windows when resizing
+  + macOS: Retina display arrange, ruler, MIDI editor, etc
+  + macOS: use Metal display output on 10.11+ for various windows
+  + macOS: add options in Preferences/General/Advanced to disable Retina support, disable Retina for non-Retina theme elements
+  + macOS: support REX files on macOS Catalina
+  + macOS: work around appearance issues when user forces dark mode rendering for app (requires Metal to be enabled) [t=222366]
+
+
+For full log see: http://www.reaper.fm/whatsnew.txt
+
+v5.0-v5.9x  - August 2015 - November 2019
+v4.0-v4.7x  - August 2011 - December 2014
+v3.0-v3.78  - May 2009 - August 2011
+v2.0-v2.58  - October 2007 - March 2009
+v1.0-v1.888 - August 2006 - August 2007
+v0.2-v0.999 - December 2005 - July 2006
+
