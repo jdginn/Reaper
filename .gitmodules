@@ -1,0 +1,6 @@
+[submodule "Scripts/PercyBysshe-audio"]
+	path = Scripts/PercyBysshe-audio
+	url = git@github.com:jdginn/PercyBysshe-audio.git
+[submodule "Scripts/jahudka/reaper-consolefx"]
+	path = Scripts/jahudka/reaper-consolefx
+	url = git@github.com:jahudka/reaper-consolefx.git
